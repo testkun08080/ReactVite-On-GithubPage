@@ -31,6 +31,8 @@ shell コマンドによって基本的には基礎となる設定は完了す�
 1. **初期コミット:** 
    ```bash
     git init
+    git add .
+    git commit -m "Initial commit"
 2. **レポジトリ作成:** 
    手動でレポジトリを作成、もしくは以下Github CLIを使用
    ```bash
