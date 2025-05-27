@@ -22,7 +22,7 @@ The basic setup should be completed mainly through shell commands.
    ```
 4. **Test Locally:**  
    After creation, run the following command to start the app locally.  
-   You should be able to access it at localhost:5173/<Repo_Name>.
+   You should be able to access it at localhost:5173/<PROJECT_NAME>.
    ```bash
    npm run dev
    ```
