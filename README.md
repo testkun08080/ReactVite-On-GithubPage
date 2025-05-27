@@ -56,5 +56,5 @@ shell コマンドによって基本的には基礎となる設定は完了す�
    以下URLを確認するか、
    Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。
    Git Actions で　deployが完了しているかどうかも確認してください。
-   その後で、ご自分の以下のような　github page に行って最終確認をして下さい。
-    (https://USERNAME.github.io/REPONAME/)
+   その後で、ご自分の以下のような　github page URL に行って最終確認をして下さい。
+    (https://USER_NAME.github.io/REPO_NAME/)

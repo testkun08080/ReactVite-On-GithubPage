@@ -58,4 +58,4 @@ The basic setup should be completed mainly through shell commands.
    go to Settings > Pages > Visit Site to see if the application displays correctly.  
    Also, check if the deploy is complete in GitHub Actions.  
    Finally, visit your GitHub Pages site like below for final confirmation:  
-   (https://USERNAME.github.io/REPONAME/)
+   (https://USER_NAME.github.io/REPO_NAME/)
