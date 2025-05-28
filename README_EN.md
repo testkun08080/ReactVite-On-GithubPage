@@ -4,7 +4,7 @@ The basic setup should be completed mainly through shell commands.
 
 ## Set Up Yourself Using the Script (React - Vite + Tailwind) 🛠️
 
-1. **Download the Shell Script:**  
+1. **Download the Shell Script:** 
    This script creates a web application template based on React-Vite with Tailwind applied.  
    It also sets up deployment to GitHub Pages.
    ```bash
