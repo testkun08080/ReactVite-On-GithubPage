@@ -1,3 +1,5 @@
+[日本語](README.md) | English
+
 # Overview
 This document records the steps to deploy a documentation page built with React + Vite (+ Tailwind) to GitHub Pages.
 The basic setup should be completed mainly through shell commands.
@@ -53,11 +55,14 @@ The basic setup should be completed mainly through shell commands.
    ```bash
    npm run deploy
    ```
-6. **Check GitHub Pages:**  
-   Check the following URL, or  
-   go to Settings > Pages > Visit Site to see if the application displays correctly.  
-   Also, check if the deploy is complete in GitHub Actions.  
-   Finally, visit your GitHub Pages site like below for final confirmation:  
+6. **Check GitHub Pages:**
+   
+   Please also check if the deployment has been completed successfully in GitHub Actions. 
+   
+   Go to **Settings > Pages > Visit Site** to verify that your application is displayed correctly. Alternatively, visit your GitHub Pages URL directly to confirm, for example:
+   
    (https://USER_NAME.github.io/REPO_NAME/)
-   Below is a sample of this page
+   
+   Here is a sample from this repository:
+   
    (https://testkun08080.github.io/ReactVite-On-GithubPage/)
