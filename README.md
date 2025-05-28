@@ -1,3 +1,5 @@
+日本語 | [English](README_EN.md)
+
 # 概要
 React + Vite ( + Tailwind )を使ったドキュメントページをGithubPage 上へデプロイするまでの流れを記録したものです。
 shell コマンドによって基本的には基礎となる設定は完了するはずです。
@@ -53,10 +55,13 @@ shell コマンドによって基本的には基礎となる設定は完了す�
     npm run deploy
    ```
 6. **GitHubPageの確認**
-   以下URLを確認するか、
-   Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。
-   Git Actions で　deployが完了しているかどうかも確認してください。
-   その後で、ご自分の以下のような　github page URL に行って最終確認をして下さい。
+
+   ・Git Actions で　deployが完了しているかどうかも確認してください。
+
+   ・Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。もしくは、ご自分の以下のような　github page URL に行って最終確認をして下さい。
+
    (https://USER_NAME.github.io/REPO_NAME/)
-   以下は、このページのサンプル
+   
+   こちらは、このレポジトリのサンプルです。
+
    (https://testkun08080.github.io/ReactVite-On-GithubPage/)
