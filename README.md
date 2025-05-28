@@ -57,4 +57,6 @@ shell コマンドによって基本的には基礎となる設定は完了す�
    Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。
    Git Actions で　deployが完了しているかどうかも確認してください。
    その後で、ご自分の以下のような　github page URL に行って最終確認をして下さい。
-    (https://USER_NAME.github.io/REPO_NAME/)
+   (https://USER_NAME.github.io/REPO_NAME/)
+   以下は、このページのサンプル
+   (https://testkun08080.github.io/ReactVite-On-GithubPage/)

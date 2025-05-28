@@ -59,3 +59,5 @@ The basic setup should be completed mainly through shell commands.
    Also, check if the deploy is complete in GitHub Actions.  
    Finally, visit your GitHub Pages site like below for final confirmation:  
    (https://USER_NAME.github.io/REPO_NAME/)
+   Below is a sample of this page
+   (https://testkun08080.github.io/ReactVite-On-GithubPage/)
