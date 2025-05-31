@@ -71,7 +71,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: /"$REPO_NAME"/
+  base: /$REPO_NAME/
 })
 EOL
 
