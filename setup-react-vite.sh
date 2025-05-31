@@ -29,8 +29,10 @@ npm install gh-pages --save-dev
 
 # Add homepage into package.json
 echo "Setting homepage in package.json..."
-jq ".homepage = \$HOMEPAGE_URL\ | .scripts += {\"predeploy\": \"npm run build\", \"deploy\": \"gh-pages -d dist\"}" package.json > package.tmp && mv package.tmp package.json
-
+jq --arg homepage "$HOMEPAGE_URL" \
+   '.homepage = $homepage | .scripts += {"predeploy": "npm run build", "deploy": "gh-pages -d dist"}' \
+   package.json > package.tmp && mv package.tmp package.json
+   
 # Install Tailwind CSS and its dependencies
 echo "Setting up Tailwind CSS..."
 npm install -D tailwindcss @tailwindcss/vite postcss autoprefixer
