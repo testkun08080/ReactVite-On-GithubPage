@@ -4,25 +4,25 @@
 React + Vite ( + Tailwind )を使ったドキュメントページをGithubPage 上へデプロイするまでの流れを記録したものです。
 shell コマンドによって基本的には基礎となる設定は完了するはずです。
 
-## 自分自身でスクリプトを使用して、セットアップ (React - Vite + Tailwind) 🛠️
+## セットアップ (React - Vite + Tailwind) 🛠️
 
 1. **ダウンロードシェルコマンドスクリプト:** 
-  このスクリプトで、React-ViteをベースとしたTailwindを適用するwebアプリケーションのテンプレートを作成します。
+  React-ViteをベースとしたTailwindを適用するwebアプリケーションのテンプレートを作成します。
   さらに、GitHubPageへのデプロイも兼ねた設定も行います。
    ```bash
     setup-react-vite.sh
    ```
-2. **パーミッション付与用のコマンド:** 
+1. **パーミッション付与用のコマンド:** 
    ```bash
     chmod +x setup-react-vite.sh
    ```
-3. **セットアップ用コマンドの実行(名前はお好みで)**
+2. **セットアップ用コマンドの実行(名前はお好みで)**
     必ず、フロントエンドのフォルダ名と、作るレポジトリの名前、Githubのユーザー名を入れてください
     ```bash
    #./setup-react-vite.sh SampleProject ReactVite-On-GithubPage testkun08080
     ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
    ```
-4. **ローカルでテスト**
+3. **ローカルでテスト**
     作成し終わったら、以下コマンドでローカル実行してみてください。
     localhost:5173/<PROJECT_NAME>でアクセスできるはずです。
     ```bash
@@ -55,13 +55,14 @@ shell コマンドによって基本的には基礎となる設定は完了す�
     npm run deploy
    ```
 6. **GitHubPageの確認**
+   
+    Git Actions で　deployが完了しているかどうかも確認してください。<br>
+   Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。<br>
+   もしくは、以下のような　github page URL(適宜、ご自分のプロジェクトに合わせて)に行って最終確認をして下さい。
 
-   ・Git Actions で　deployが完了しているかどうかも確認してください。
-
-   ・Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。もしくは、ご自分の以下のような　github page URL に行って最終確認をして下さい。
-
-   (https://USER_NAME.github.io/REPO_NAME/)
+    ```bash
+    https://USER_NAME.github.io/REPO_NAME/
+   ```
    
    こちらは、このレポジトリのサンプルです。
-
    (https://testkun08080.github.io/ReactVite-On-GithubPage/)
