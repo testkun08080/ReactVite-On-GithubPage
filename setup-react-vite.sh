@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#  Get the project name from the argument, default to "bite-react-app"
-PROJECT_NAME=${1:-vite-react-app}
+#  Get the project name from the argument, default to "react-vite-app"
+PROJECT_NAME=${1:-react-vite-app}
 REPO_NAME=${2:-repo-name}
 USER_NAME=${3:-user-name}
 
