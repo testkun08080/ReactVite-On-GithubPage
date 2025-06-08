@@ -1,28 +1,28 @@
 日本語 | [English](README_EN.md)
-
 # 概要
-React + Vite ( + Tailwind )を使ったドキュメントページをGithubPage 上へデプロイするまでの流れを記録したものです。
-shell コマンドによって基本的には基礎となる設定は完了するはずです。
+React + Vite (+ Tailwind) を使ったドキュメントページを GitHub Pages 上へデプロイするまでの流れを記録したものです。  
+基本的な設定はシェルコマンドで完了します。
 
 *サンプルページは[こちら](https://testkun08080.github.io/ReactVite-On-GithubPage/)*
 
-## 事前インストール必要なもの
-- npm Node.js 20+ (インストールは[こちら](https://nodejs.org/en/download/))
-- 
+### 事前インストールが必要なもの
+- Node.js 20+ および npm（[インストールはこちら](https://nodejs.org/en/download/)）
+
+---
 
 ## セットアップ (React - Vite + Tailwind) 🛠️
 
-1. **ローカルへクローンorダウンロード**
-    ```bash
-    git clone https://github.com/testkun08080/ReactVite-On-GithubPage.git
-    cd ReactVite-On-GithubPage
+1. **ローカルへクローンまたはダウンロード**
+   ```bash
+   git clone https://github.com/testkun08080/ReactVite-On-GithubPage.git
+   cd ReactVite-On-GithubPage
    ```
-   もしくは直接スクリプトだけダウンロードしてください
+   またはスクリプトのみダウンロード
    ```bash
    curl -o setup-react-vite.sh https://raw.githubusercontent.com/testkun08080/ReactVite-On-GithubPage/main/setup-react-vite.sh
    ```
 
-2. **ページを作成したいレポがあれば、そちらにスクリプトをコピーしてください**
+2. **ページを作成したいリポジトリにスクリプトをコピー**
    ```bash
    cp setup-react-vite.sh /path/to/YourGitRepo/
    cd /path/to/YourGitRepo/
@@ -33,72 +33,77 @@ shell コマンドによって基本的には基礎となる設定は完了す�
    chmod +x setup-react-vite.sh
    ```
 
-4. **セットアップ用コマンドの実行(名前はお好みで)**
-   フロントエンドをルート以下に別フォルダとして作成したい場合
+4. **セットアップ用コマンドの実行（名前は任意）**
+   フロントエンドをルート以下の別フォルダに作成したい場合
    ```bash
-   #./setup-react-vite.sh SampleProject ReactVite-On-GithubPage testkun08080
-    ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
+   # ./setup-react-vite.sh SampleProject ReactVite-On-GithubPage testkun08080
+   ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
    ```
 
-   or もし新しいレポのルートをフロントエンドと同じにしたい場合
-    ```bash
-   #./setup-react-vite.sh ReactVite-On-GithubPage ReactVite-On-GithubPage testkun08080
-    ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
+   もしくは新しいリポジトリのルートをフロントエンドと同じにしたい場合
+   ```bash
+   # ./setup-react-vite.sh ReactVite-On-GithubPage ReactVite-On-GithubPage testkun08080
+   ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
    ```
 
-5. **ローカルでテスト:**
-    作成し終わったら、作成されたプロジェクトフォルダへ移動して、ローカル実行してみてください。
-    localhost:5173/<PROJECT_NAME>でアクセスできるはずです。
-    ```bash
-    cd <PROJECT_NAME>
-    npm run dev
+5. **ローカルでテスト**
+   作成されたプロジェクトフォルダへ移動し、ローカルで実行してください。  
+   `localhost:5173` でアクセスできるはずです。
+   ```bash
+   cd <PROJECT_NAME>
+   npm run dev
    ```
+
+---
 
 ## デプロイ
 
-#### 1A.レポジトリを作成新しく作る場合
-1. **初期コミット:** 
-   ```bash
+- ### 1(A). 新しくリポジトリを作成する場合
+
+  1. **初期コミット:** 
+    ```bash
     git init
     git add .
     git commit -m "Initial commit"
-2. **レポジトリ作成:** 
-   ```bash
-   gh repo create --public --source=.
-   ```
-3. **プッシュ:** 
-   ```bash
+    ```
+  2. **リポジトリ作成:** 
+    ```bash
+    gh repo create --public --source=.
+    ```
+  3. **プッシュ:** 
+    ```bash
     git branch -M main
     git push -u origin main
-   ```
+    ```
 
-#### 1B.既存レポへコミットしてプッシュする場合
-1. **コミットとプッシュ:**
-   ```bash
-   git add .
-   git commit -m "add react vite app"
-   git push origin main
-   ```
+- ### 1(B). 既存リポジトリへコミットしてプッシュする場合
+  1. **コミットとプッシュ:**
+    ```bash
+    git add .
+    git commit -m "add react vite app"
+    git push origin main
+    ```
 
-#### 2.アプリをデプロイする
-2. **Reactアプリケーションフォルダへ移動:** 
-   ```bash
+- ### 2. アプリをデプロイする
+  1. **React アプリケーションフォルダへ移動:** 
+    ```bash
     cd <PROJECT_NAME>
-   ```
-3. **GitHubPage用にビルドとデプロイ**
-    事前にbuildも行われて、distフォルダの中身のみがデプロイされずはずです
+    ```
+  2. **GitHub Pages 用にビルドとデプロイ**
+    事前に build も行われ、`dist` フォルダの中身のみがデプロイされます。
     ```bash
     npm run deploy
-   ```
-4. **GitHubPageの確認**
-   
-    Git Actionsでdeployが完了しているかどうかも確認してください。<br>
-   Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。<br>
-   もしくは、以下のような　github page URL(適宜、ご自分のプロジェクトに合わせて)に行って最終確認をして下さい。
+    ```
+  3. **GitHub Pages の確認**
 
-    ```bash
+    GitHub Actions で deploy が完了しているか確認してください。  
+    Settings > Pages > Visit Site でアプリケーションが正常に表示されるか確認してください。  
+    または、以下のような GitHub Pages の URL（ご自身のプロジェクトに合わせて）で最終確認してください:
+
+    ```
     https://USER_NAME.github.io/REPO_NAME/
-   ```
-   
-   こちらは、このレポジトリのサンプルです。
-   (https://testkun08080.github.io/ReactVite-On-GithubPage/)
+    ```
+
+    こちらはこのリポジトリのサンプルです。  
+    [https://testkun08080.github.io/ReactVite-On-GithubPage/](https://testkun08080.github.io/ReactVite-On-GithubPage/)
+
