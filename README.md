@@ -63,7 +63,7 @@ shell コマンドによって基本的には基礎となる設定は完了す�
    ```
 6. **GitHubPageの確認**
    
-    Git Actions で　deployが完了しているかどうかも確認してください。<br>
+    Git Actionsでdeployが完了しているかどうかも確認してください。<br>
    Settings > Pages > Visit Site で アプリケーションが正常に表示されるか確認してみてください。<br>
    もしくは、以下のような　github page URL(適宜、ご自分のプロジェクトに合わせて)に行って最終確認をして下さい。
 
