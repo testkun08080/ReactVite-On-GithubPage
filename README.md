@@ -8,20 +8,15 @@ shell コマンドによって基本的には基礎となる設定は完了す�
 
 ## 事前インストール必要なもの
 - npm Node.js 20+ (インストールは[こちら](https://nodejs.org/en/download/))
-
+- 
 
 
 ## セットアップ (React - Vite + Tailwind) 🛠️
 
-1. **ダウンロードシェルコマンドスクリプト:** 
-  React-ViteをベースとしたTailwindを適用するwebアプリケーションのテンプレートを作成します。
-  さらに、GitHubPageへのデプロイも兼ねた設定も行います。
-   ```bash
-    setup-react-vite.sh
-   ```
-1. **パーミッション付与用のコマンド:** 
-   ```bash
-    chmod +x setup-react-vite.sh
+1. **ローカルへクローンする**
+    ```bash
+    git clone https://github.com/testkun08080/ReactVite-On-GithubPage.git
+    cd ReactVite-On-GithubPage
    ```
 2. **セットアップ用コマンドの実行(名前はお好みで)**
     必ず、フロントエンドのフォルダ名と、作るレポジトリの名前、Githubのユーザー名を入れてください

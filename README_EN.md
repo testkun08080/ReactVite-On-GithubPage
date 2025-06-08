@@ -12,23 +12,18 @@ The basic setup should be completed mainly through shell commands.
 
 ## Set Up (React - Vite + Tailwind) 🛠️
 
-1. **Download the Shell Script:** 
-   This script creates a web application template based on React-Vite with Tailwind applied.  
-   It also sets up deployment to GitHub Pages.
-   ```bash
-   setup-react-vite.sh
+1. **clone**
+    ```bash
+    git clone https://github.com/testkun08080/ReactVite-On-GithubPage.git
+    cd ReactVite-On-GithubPage
    ```
-2. **Grant Execute Permission to the Script:**  
-   ```bash
-   chmod +x setup-react-vite.sh
-   ```
-3. **Run the Setup Script (choose any name you like):**  
+2. **Run the Setup Script (choose any name you like):**  
    Be sure to specify the frontend folder name, repository name, and your GitHub username.
    ```bash
    # ./setup-react-vite.sh SampleProject ReactVite-On-GithubPage testkun08080
    ./setup-react-vite.sh <PROJECT_NAME> <REPO_NAME> <USER_NAME>
    ```
-4. **Test Locally:**  
+3. **Test Locally:**  
    After creation, run the following command to start the app locally.  
    You should be able to access it at localhost:5173/<PROJECT_NAME>.
    ```bash
