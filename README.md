@@ -4,6 +4,18 @@
 React + Vite ( + Tailwind )を使ったドキュメントページをGithubPage 上へデプロイするまでの流れを記録したものです。
 shell コマンドによって基本的には基礎となる設定は完了するはずです。
 
+*サンプルページは[こちら](https://testkun08080.github.io/ReactVite-On-GithubPage/)*
+
+## 開発環境
+- macOS Sequoia 15.5
+- VsCode
+- zsh 5.9 (arm64-apple-darwin24.0)
+
+## 事前インストール必要なもの
+- npm Node.js 20+ (インストールは[こちら](https://nodejs.org/en/download/))
+
+
+
 ## セットアップ (React - Vite + Tailwind) 🛠️
 
 1. **ダウンロードシェルコマンドスクリプト:** 

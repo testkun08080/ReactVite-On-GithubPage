@@ -4,6 +4,12 @@
 This document records the steps to deploy a documentation page built with React + Vite (+ Tailwind) to GitHub Pages.
 The basic setup should be completed mainly through shell commands.
 
+*Sample page is [here](https://testkun08080.github.io/ReactVite-On-GithubPage/)*
+
+## Prerequisites
+- npm and Node.js 20+ (Download from [here](https://nodejs.org/en/download/))
+
+
 ## Set Up (React - Vite + Tailwind) 🛠️
 
 1. **Download the Shell Script:** 
