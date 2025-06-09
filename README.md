@@ -6,6 +6,7 @@ React + Vite (+ Tailwind) を使ったドキュメントページを GitHub Page
 *サンプルページは[こちら](https://testkun08080.github.io/ReactVite-On-GithubPage/)*
 
 ### 事前インストールが必要なもの
+- git cli(インストールは[こちら](https://cli.github.com/))
 - Node.js 20+ および npm（[インストールはこちら](https://nodejs.org/en/download/)）
 
 ---

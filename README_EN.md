@@ -8,7 +8,7 @@ Most of the basic setup should be completed using shell commands.
 *Sample page is [here](https://testkun08080.github.io/ReactVite-On-GithubPage/)*
 
 ### Prerequisites
-
+- git cli([Install here](https://cli.github.com/))
 - npm, Node.js 20+ ([Download here](https://nodejs.org/en/download/))
 
 ---
